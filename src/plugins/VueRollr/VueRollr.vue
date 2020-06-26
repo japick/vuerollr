@@ -56,31 +56,29 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 .vr-container {
-  width: 100vw; // set as configurable option
-  height: 100vh; // set as configurable option
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 .vuerollr {
   position: relative;
   width: 100%;
   height: 100%;
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    visibility: hidden;
-
-    &.is-active {
-      position: static;
-      display: block;
-      visibility: visible;
-    }
-  }
+}
+.vuerollr img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  visibility: hidden;
+}
+.vuerollr img.is-active {
+  position: static;
+  display: block;
+  visibility: visible;
 }
 </style>

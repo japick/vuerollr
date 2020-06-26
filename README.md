@@ -6,7 +6,7 @@
 
 ### Installation
 
-`npm i vuerollr`
+`npm i vuerollr --save`
 
 ### Usage
 
