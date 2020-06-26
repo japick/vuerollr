@@ -6,9 +6,7 @@
 
 ### Installation
 
-```
-npm i vuerollr
-```
+`npm i vuerollr`
 
 ### Usage
 
