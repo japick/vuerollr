@@ -33,9 +33,9 @@ export default {
     },
     setActive(n) {
       this.nodes.forEach(node => {
-        node.classList.remove('pr-active')
+        node.classList.remove('is-active')
       })
-      n.classList.add('pr-active')
+      n.classList.add('is-active')
       return n
     },
     photoRollr() {
@@ -64,15 +64,19 @@ export default {
 }
 .vuerollr {
   position: relative;
+  width: 100%;
+  height: 100%;
 
   img {
     position: absolute;
     top: 0;
     left: 0;
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     visibility: hidden;
 
-    &.pr-active {
+    &.is-active {
       position: static;
       display: block;
       visibility: visible;
