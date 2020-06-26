@@ -4,8 +4,8 @@
       <h1>VueRollr</h1>
       <p>Vue.js Mouseover Image Showreel</p>
       <ul>
-        <li><a href="#" title="npm" rel="noreferrer" target="_blank">Install</a></li>
-        <li><a href="https://github.com/japick/vuerollr" title="Github" rel="noreferrer" target="_blank">Docs</a></li>
+        <li><a href="https://www.npmjs.com/package/vuerollr" title="Install" rel="noreferrer" target="_blank">Install</a></li>
+        <li><a href="https://github.com/japick/vuerollr" title="Docs" rel="noreferrer" target="_blank">Docs</a></li>
       </ul>
     </section>
     <VueRollr>
