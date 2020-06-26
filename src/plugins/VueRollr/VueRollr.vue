@@ -10,7 +10,6 @@
 
 <script>
 export default {
-  name: 'VueRollr',
   data() {
     return {
       startPoint: 1,

@@ -6,7 +6,7 @@
 
 ### Installation
 
-`npm i vuerollr --save`
+`npm i vuerollr`
 
 ### Usage
 
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { VueRollr } from 'VueRollr'
+import VueRollr from 'VueRollr'
 
 export default {
   components: {
