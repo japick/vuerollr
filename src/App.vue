@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import {VueRollr} from './plugins/VueRollr'
+import VueRollr from './plugins/VueRollr'
 
 export default {
   name: 'App',

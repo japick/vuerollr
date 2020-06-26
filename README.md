@@ -49,4 +49,4 @@ Coming soon.
 
 ### License
 
-MIT
+[MIT](https://github.com/japick/vuerollr/blob/master/LICENSE)
