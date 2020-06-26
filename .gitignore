@@ -2,7 +2,6 @@
 node_modules
 /dist
 public
-babel.config.js
 
 # local env files
 .env.local
