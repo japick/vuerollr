@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import VueRollr from 'VueRollr'
+import VueRollr from 'vuerollr'
 
 export default {
   components: {
