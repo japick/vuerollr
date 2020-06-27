@@ -1,6 +1,6 @@
 # VueRollr
 
-**VueRollr** is a lightweight plugin that allows you to add a mouseover image showreel to your Vue.js project.
+**VueRollr** is a lightweight plugin that allows you to add a mouseover showreel to your Vue.js project. Supported media now includes images and video.
 
 [Demo](https://vuerollr.japick.io/)
 
@@ -48,7 +48,6 @@ Coming soon.
 
  - Configurable options
  - Mobile support
- - Video support
 
 ### License
 
