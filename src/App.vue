@@ -2,19 +2,22 @@
   <div id="app">
     <section>
       <h1>VueRollr</h1>
-      <p>Vue.js Mouseover Image Showreel</p>
+      <p>Mouseover showreel plugin for Vue.js</p>
       <ul>
         <li><a href="https://www.npmjs.com/package/vuerollr" title="Install" rel="noreferrer" target="_blank">Install</a></li>
         <li><a href="https://github.com/japick/vuerollr" title="Docs" rel="noreferrer" target="_blank">Docs</a></li>
       </ul>
     </section>
     <VueRollr>
-      <img src="https://picsum.photos/id/10/1200/800">
-      <img src="https://picsum.photos/id/11/1200/800">
-      <img src="https://picsum.photos/id/12/1200/800">
-      <img src="https://picsum.photos/id/13/1200/800">
-      <img src="https://picsum.photos/id/14/1200/800">
-      <img src="https://picsum.photos/id/15/1200/800">
+      <img src="https://picsum.photos/id/10/1800/1200">
+      <img src="https://picsum.photos/id/11/1800/1200">
+      <img src="https://picsum.photos/id/12/1800/1200">
+      <video loop autoplay muted>
+        <source src="https://cdn.videvo.net/videvo_files/converted/2018_07/videos/180607_A_064.mp429860_jw.mp4">
+      </video>
+      <img src="https://picsum.photos/id/13/1800/1200">
+      <img src="https://picsum.photos/id/14/1800/1200">
+      <img src="https://picsum.photos/id/15/1800/1200">
     </VueRollr>
   </div>
 </template>

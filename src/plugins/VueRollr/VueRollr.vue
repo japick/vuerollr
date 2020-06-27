@@ -66,7 +66,8 @@ export default {
   width: 100%;
   height: 100%;
 }
-.vuerollr img {
+.vuerollr img,
+.vuerollr video {
   position: absolute;
   top: 0;
   left: 0;
@@ -75,7 +76,8 @@ export default {
   object-fit: cover;
   visibility: hidden;
 }
-.vuerollr img.is-active {
+.vuerollr img.is-active,
+.vuerollr video.is-active {
   position: static;
   display: block;
   visibility: visible;

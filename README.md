@@ -14,12 +14,15 @@
 <template>
   <div>
     <VueRollr>
-      <img src="https://picsum.photos/id/10/1200/800">
-      <img src="https://picsum.photos/id/11/1200/800">
-      <img src="https://picsum.photos/id/12/1200/800">
-      <img src="https://picsum.photos/id/13/1200/800">
-      <img src="https://picsum.photos/id/14/1200/800">
-      <img src="https://picsum.photos/id/15/1200/800">
+      <img src="...">
+      <img src="...">
+      <img src="...">
+      <video loop autoplay muted>
+        <source src="...">
+      </video>
+      <img src="...">
+      <img src="...">
+      <img src="...">
     </VueRollr>
   </div>
 </template>
