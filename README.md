@@ -38,8 +38,6 @@ export default {
 </script>
 ```
 
-If using **Nuxt.js**, you'll need to create a plugin file and add it to your `nuxt.config.js` as explained [here](https://nuxtjs.org/guide/plugins/#vue-plugins).
-
 ### Configurable Options
 
 Coming soon.
