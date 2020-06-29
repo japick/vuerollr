@@ -10,7 +10,7 @@
 
 ### Usage
 
-```
+```vue
 <template>
   <div>
     <VueRollr>
