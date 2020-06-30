@@ -38,8 +38,6 @@ export default {
 </script>
 ```
 
-### Configurable Options
-
 Options are passed as props.
 
 ```vue
@@ -50,11 +48,6 @@ Options are passed as props.
 
 * **breakpoint** - mobile breakpoint *default: 768*
 * **speed** - mobile autoplay speed in milliseconds *default: 1000*
-
-### Todos
-
- - Configurable options
- - Mobile support
 
 ### License
 
