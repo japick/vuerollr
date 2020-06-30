@@ -40,8 +40,6 @@ export default {
 
 ### Options
 
-Options are passed as props.
-
 ```vue
 <VueRollr
     :breakpoint="530"
