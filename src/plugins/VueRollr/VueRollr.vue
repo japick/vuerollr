@@ -23,7 +23,7 @@ export default {
   props: {
     breakpoint: {
       type: Number,
-      default: 800
+      default: 768
     },
     speed: {
       type: Number,

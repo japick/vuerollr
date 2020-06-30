@@ -40,7 +40,16 @@ export default {
 
 ### Configurable Options
 
-Coming soon.
+Options are passed as props.
+
+```vue
+<VueRollr
+    :breakpoint="530"
+    :speed="2000">
+```
+
+* **breakpoint** - mobile breakpoint *default: 768*
+* **speed** - mobile autoplay speed in milliseconds *default: 1000*
 
 ### Todos
 
