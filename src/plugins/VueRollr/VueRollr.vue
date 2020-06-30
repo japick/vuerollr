@@ -14,39 +14,68 @@ export default {
     return {
       startPoint: 1,
       activeNumber: this.startPoint,
-      nodes: []
+      nodes: [],
+      width: 0,
+      interval: "",
+      mouseOverActive: true
     }
   },
   props: {
-    // options here
+    breakpoint: {
+      type: Number,
+      default: 800
+    },
+    speed: {
+      type: Number,
+      default: 1000
+    }
   },
   mounted() {
     this.nodes = this.$refs.vuerollr.childNodes
     this.setActive(this.nodes[0])
-    this.photoRollr()
     window.addEventListener("resize", this.getWidth)
+    this.width = this.$refs.vuerollr.clientWidth
+  }, 
+  watch: {
+    width: function() {
+      clearInterval(this.interval)
+      if (window.matchMedia(`(max-width: ${this.$props.breakpoint}px)`).matches) { // TODO: make this breakpoint configurable
+        this.$refs.vuerollr.removeEventListener("mousemove", this.vueRollr, false)
+        this.autoVueRollr()
+      } else {
+        this.$refs.vuerollr.addEventListener("mousemove", this.vueRollr, false)
+      }
+    } 
   },
   methods: {
     getWidth() {
-      return this.$refs.vuerollr.clientWidth
+      this.width = this.$refs.vuerollr.clientWidth
+      return this.width
     },
     setActive(n) {
       this.nodes.forEach(node => {
-        node.classList.remove('is-active')
+        node.classList.remove("is-active")
       })
-      n.classList.add('is-active')
+      n.classList.add("is-active")
       return n
     },
-    photoRollr() {
-      this.$refs.vuerollr.addEventListener("mousemove", (e) => {
-        let columnNumber = parseInt(e.pageX / (this.getWidth() / this.nodes.length))
-        if (columnNumber !== this.activeNumber) {
-          if (e.pageX >= this.width)
-            columnNumber--
-          this.activeNumber = columnNumber
-          this.setActive(this.nodes[columnNumber])
-        }
-      })
+    autoVueRollr() {
+      let currentSlide = 0
+      this.interval = setInterval(() => {
+        this.nodes[currentSlide].classList.remove("is-active") 
+        currentSlide = (currentSlide + 1) % this.nodes.length 
+        this.nodes[currentSlide].className = "is-active" 
+      }, this.$props.speed) // TODO: make this interval time configurable
+    },
+    vueRollr(e) {
+      e = e || window.event
+      let columnNumber = parseInt(e.pageX / (this.getWidth() / this.nodes.length))
+      if (columnNumber !== this.activeNumber) {
+        if (e.pageX >= this.width)
+          columnNumber--
+        this.activeNumber = columnNumber
+        this.setActive(this.nodes[columnNumber])
+      }
     }
   },
   beforeDestroy() {
