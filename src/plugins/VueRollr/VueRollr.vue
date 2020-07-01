@@ -16,8 +16,7 @@ export default {
       activeNumber: this.startPoint,
       nodes: [],
       width: 0,
-      interval: "",
-      mouseOverActive: true
+      interval: ""
     }
   },
   props: {
@@ -39,7 +38,7 @@ export default {
   watch: {
     width: function() {
       clearInterval(this.interval)
-      if (window.matchMedia(`(max-width: ${this.$props.breakpoint}px)`).matches) { // TODO: make this breakpoint configurable
+      if (window.matchMedia(`(max-width: ${this.$props.breakpoint}px)`).matches) {
         this.$refs.vuerollr.removeEventListener("mousemove", this.vueRollr, false)
         this.autoVueRollr()
       } else {
@@ -65,7 +64,7 @@ export default {
         this.nodes[currentSlide].classList.remove("is-active") 
         currentSlide = (currentSlide + 1) % this.nodes.length 
         this.nodes[currentSlide].className = "is-active" 
-      }, this.$props.speed) // TODO: make this interval time configurable
+      }, this.$props.speed)
     },
     vueRollr(e) {
       e = e || window.event
