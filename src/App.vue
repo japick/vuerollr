@@ -2,7 +2,7 @@
   <div id="app">
     <section>
       <h1>VueRollr</h1>
-      <p>Mouseover showreel plugin for Vue.js</p>
+      <p>Mouseover gallery plugin for Vue.js</p>
       <ul>
         <li><a href="https://www.npmjs.com/package/vuerollr" title="Install" rel="noreferrer" target="_blank">Install</a></li>
         <li><a href="https://github.com/japick/vuerollr" title="Docs" rel="noreferrer" target="_blank">Docs</a></li>
