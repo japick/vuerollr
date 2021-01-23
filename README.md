@@ -2,7 +2,7 @@
 
 **VueRollr** is a lightweight plugin that allows you to add a mouseover gallery to your Vue.js project. Supported media now includes images and video.
 
-[Demo](https://vuerollr.japick.io/)
+[Demo](https://vuerollr.netlify.app/)
 
 ### Installation
 
